@@ -12,7 +12,7 @@
       --bg:        #faf9f7;
       --text:      #1a1a1a;
       --muted:     #555;
-      --accent:    #57068c; /* NYU purple */
+      --accent:    #57068c;
       --rule:      #ddd;
       --mono:      'DM Mono', monospace;
       --serif:     'EB Garamond', Georgia, serif;
@@ -95,6 +95,18 @@
     p { margin-bottom: 0.75rem; }
     p:last-child { margin-bottom: 0; }
 
+    /* ── Research bullets ── */
+    section ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    section ul li {
+      margin-bottom: 0.6rem;
+      font-size: 1.125rem;
+      line-height: 1.75;
+    }
+    section ul li:last-child { margin-bottom: 0; }
+
     /* ── Experience & Education entries ── */
     .entry { margin-bottom: 1.25rem; }
     .entry:last-child { margin-bottom: 0; }
@@ -150,7 +162,7 @@
     <p class="hd-role"><a href="https://math.nyu.edu/dynamic/research/areas/mathematical-sciences/" target="_blank">Courant Institute of Mathematical Sciences</a></p>
     <p class="hd-role">New York University</p>
     <p class="hd-role"><a href="mailto:nwg2009@nyu.edu">nwg2009@nyu.edu</a></p>
-    <a class="cv-link" href="Nicholas_Geissler_CV.pdf" target="_blank">CV</a>
+    <a class="cv-link" href="Nicholas_Geissler_CV(1).pdf" target="_blank">CV</a>
   </header>
 
   <hr />
@@ -160,10 +172,8 @@
     <h2>About</h2>
     <p>
       I am a first-year PhD student in Mathematics at the Courant Institute, NYU.
-      My research interests lie broadly in applied mathematics, with a focus on
-      signal processing, time series analysis, and statistical inference. I am
-      particularly interested in low-rank and structured matrix methods and their
-      applications to forecasting and denoising.
+      My research interests lie broadly in applied and computational mathematics. I am
+      particularly interested in numerical linear algebra.
     </p>
   </section>
 
@@ -192,13 +202,14 @@
   <!-- Research -->
   <section>
     <h2>Research</h2>
-    <p>
-      As an undergraduate and master's student at Hopkins, I worked with
-      Drs. Sergey Kushnarev and Christian Kümmerlé on iterative reweighted
-      least-squares methods for time series denoising, missing-data interpolation,
-      and forecasting. This work included an application to gravitational wave
-      detection and formed the basis of my master's thesis.
-    </p>
+    <ul>
+      <li>I am currently working with Dr. Benjamin Peherstorfer on machine learning based surrogate
+      models, with a focus on one-step generative models and Neural Galerkin schemes.</li>
+      <li>As an undergraduate and master's student at Hopkins, I worked with
+      Dr. Sergey Kushnarev and Dr. Christian Kümmerle on structured low rank approximation
+      and its applications to time series denoising, with a focus on gravitational wave signals
+      relevant to the Laser Interferometer Space Antenna (LISA).</li>
+    </ul>
   </section>
 
   <!-- Experience -->
@@ -213,8 +224,7 @@
       <div class="entry-sub">Quantitative Trader Intern &nbsp;·&nbsp; US Treasury Basis desk</div>
       <div class="entry-body">
         Market-made US Treasury bonds and bond futures; developed and backtested
-        an automated market-making algorithm in Python; presented statistical
-        trade ideas to the desk.
+        an automated market-making algorithm in Python.
       </div>
     </div>
 
@@ -226,11 +236,10 @@
       <div class="entry-sub">Clinical Information Specialist (Data Science)</div>
       <div class="entry-body">
         Developed statistical methods for Phase 1 oncology clinical trial data
-        in R and MATLAB; co-authored a manuscript on tumor response scoring criteria.
+        in R and MATLAB.
       </div>
     </div>
   </section>
-
 
   <footer>Last updated May 2026.</footer>
 
