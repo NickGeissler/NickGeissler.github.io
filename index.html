@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicholas Geissler</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:        #faf9f7;
+      --text:      #1a1a1a;
+      --muted:     #555;
+      --accent:    #57068c; /* NYU purple */
+      --rule:      #ddd;
+      --mono:      'DM Mono', monospace;
+      --serif:     'EB Garamond', Georgia, serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      line-height: 1.75;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .hd-name {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.25rem;
+    }
+
+    .hd-role {
+      font-size: 1rem;
+      color: var(--muted);
+      font-family: var(--mono);
+      line-height: 1.6;
+      margin-bottom: 0.15rem;
+    }
+
+    .hd-role a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .hd-role a:hover { text-decoration: underline; }
+
+    .cv-link {
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      padding: 0.2rem 0.65rem;
+      border-radius: 2px;
+      letter-spacing: 0.04em;
+      transition: background 0.15s, color 0.15s;
+    }
+    .cv-link:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 1.75rem 0;
+    }
+
+    /* ── Sections ── */
+    section { margin-bottom: 2.25rem; }
+
+    h2 {
+      font-size: 0.8rem;
+      font-family: var(--mono);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 0.9rem;
+    }
+
+    p { margin-bottom: 0.75rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Experience & Education entries ── */
+    .entry { margin-bottom: 1.25rem; }
+    .entry:last-child { margin-bottom: 0; }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    .entry-title {
+      font-weight: 500;
+      font-size: 1.05rem;
+    }
+
+    .entry-date {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .entry-sub {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .entry-body {
+      font-size: 0.97rem;
+      color: #333;
+    }
+
+    /* ── Footer ── */
+    footer {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- Header -->
+  <header>
+    <p class="hd-name">Nicholas Geissler</p>
+    <p class="hd-role">PhD Student</p>
+    <p class="hd-role"><a href="https://math.nyu.edu/dynamic/research/areas/mathematical-sciences/" target="_blank">Courant Institute of Mathematical Sciences</a></p>
+    <p class="hd-role">New York University</p>
+    <p class="hd-role"><a href="mailto:nwg2009@nyu.edu">nwg2009@nyu.edu</a></p>
+    <a class="cv-link" href="Nicholas_Geissler_CV.pdf" target="_blank">CV</a>
+  </header>
+
+  <hr />
+
+  <!-- About -->
+  <section>
+    <h2>About</h2>
+    <p>
+      I am a first-year PhD student in Mathematics at the Courant Institute, NYU.
+      My research interests lie broadly in applied mathematics, with a focus on
+      signal processing, time series analysis, and statistical inference. I am
+      particularly interested in low-rank and structured matrix methods and their
+      applications to forecasting and denoising.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">New York University</span>
+        <span class="entry-date">2025 – present</span>
+      </div>
+      <div class="entry-sub">PhD, Mathematics — Courant Institute</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Johns Hopkins University</span>
+        <span class="entry-date">2021 – 2025</span>
+      </div>
+      <div class="entry-sub">BS &amp; MS, Applied Mathematics and Statistics; BS, Computer Science</div>
+      <div class="entry-body">GPA 4.0 &nbsp;·&nbsp; Naddor Prize recipient</div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section>
+    <h2>Research</h2>
+    <p>
+      As an undergraduate and master's student at Hopkins, I worked with
+      Drs. Sergey Kushnarev and Christian Kümmerlé on iterative reweighted
+      least-squares methods for time series denoising, missing-data interpolation,
+      and forecasting. This work included an application to gravitational wave
+      detection and formed the basis of my master's thesis.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">TransMarket Group</span>
+        <span class="entry-date">Summer 2024</span>
+      </div>
+      <div class="entry-sub">Quantitative Trader Intern &nbsp;·&nbsp; US Treasury Basis desk</div>
+      <div class="entry-body">
+        Market-made US Treasury bonds and bond futures; developed and backtested
+        an automated market-making algorithm in Python; presented statistical
+        trade ideas to the desk.
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Merck &amp; Co.</span>
+        <span class="entry-date">2023 – 2024</span>
+      </div>
+      <div class="entry-sub">Clinical Information Specialist (Data Science)</div>
+      <div class="entry-body">
+        Developed statistical methods for Phase 1 oncology clinical trial data
+        in R and MATLAB; co-authored a manuscript on tumor response scoring criteria.
+      </div>
+    </div>
+  </section>
+
+
+  <footer>Last updated May 2026.</footer>
+
+</main>
+</body>
+</html>
